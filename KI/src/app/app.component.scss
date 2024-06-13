@@ -1,0 +1,101 @@
+.chatgpt-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #1e1e1e;
+    color: #f7f7f8;
+    font-family: Arial, sans-serif;
+    padding: 1rem;
+    box-sizing: border-box;
+  }
+  
+  .output-container {
+    flex: 1;
+    overflow-y: auto;
+    margin-bottom: 1rem;
+  }
+  
+  .output-container::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .output-container::-webkit-scrollbar-track {
+    background: #2c2c2c;
+  }
+  
+  .output-container::-webkit-scrollbar-thumb {
+    background-color: #585858;
+    border-radius: 10px;
+    border: 2px solid #2c2c2c;
+  }
+  
+  .user-message {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 0.5rem;
+  }
+  
+  .bot-message {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.8rem;
+  }
+  
+  .message-text {
+    max-width: 60%;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    background-color: #2c2c2c;
+    color: #f7f7f8;
+    word-wrap: break-word;
+  }
+  
+  .user-message .message-text {
+    background-color: #585858;
+  }
+  
+  .input-bar {
+    display: flex;
+    align-items: center;
+    background-color: #2c2c2c;
+    padding: 0.5rem;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    bottom: 1rem;
+    left: 25%; /* Zentriert und 50% der Breite */
+    right: 25%; /* Zentriert und 50% der Breite */
+  }
+  
+  .input-field {
+    flex: 1;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #2c2c2c;
+    color: #f7f7f8;
+    margin-right: 0.5rem;
+    resize: none; /* verhindert das Ändern der Größe */
+    overflow-y: auto; /* aktiviert den vertikalen Bildlauf */
+  }
+  
+  .input-field:focus {
+    outline: none;
+    overflow-y: auto; /* aktiviert den vertikalen Bildlauf, wenn der Fokus aktiv ist */
+  }
+  
+  .submit-button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #585858;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  .submit-button:hover {
+    background-color: #0056b3;
+  }
+  

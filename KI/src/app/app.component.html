@@ -1,0 +1,11 @@
+<div class="chatgpt-container">
+  <div class="output-container">
+    <div *ngFor="let message of messages" [ngClass]="{'user-message': message.isUser, 'bot-message': !message.isUser}">
+      <p class="message-text">{{ message.text }}</p>
+    </div>
+  </div>
+  <div class="input-bar">
+    <input [(ngModel)]="inputText" placeholder="Gib deinen Text ein" class="input-field">
+    <button (click)="onSubmit()" class="submit-button">Absenden</button>
+  </div>
+</div>
